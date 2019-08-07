@@ -13,7 +13,8 @@ img {
 
 @media (max-width: 1200px) {
   .container {
-    width: 760px;
+    max-width: 760px;
+    width: 95%;
   }
 }
 
