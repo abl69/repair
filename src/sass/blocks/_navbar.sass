@@ -1,7 +1,9 @@
 .navbar
 	padding: 8px 0
+	height: 88px
 	&-block
 		display: flex
+		height: 74px
 		justify-content: space-between
 		align-items: center
 	&__info
@@ -19,26 +21,36 @@
 	&__adress
 		display: flex
 		flex-direction: column
+		margin-bottom: -2px
+		font-size: 13px
+		font-weight: 400
 	&__button
-		margin-left: 30px
+		margin-left: 31px
+		padding: 19px 30px
+		font-size: 13px
 @media ( max-width: 768px )
 	.navbar
 		&__phone
 			font-size: 16px
 		&__adress
-			font-size: 14px
+			font-size: 13px
 		&__button
 			padding: 15px 26px
-			font-size: 12px
 		&__logo
 			width: 90px
+			margin-top: 1px
 @media ( max-width: 567px )
 	.navbar
+		height: 76px
+		&__block
+			height: 76
 		&__contacts
 			display: none
 		&__button
-			padding: 15px 26px
+			padding: 15px 26px 14px 26px
+			font-family: Museo Sans Cyrl-700
 			font-size: 10px
+			font-weight: 400
 		&__logo
 			width: 90px
 			

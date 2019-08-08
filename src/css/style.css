@@ -19,7 +19,7 @@
 }
 
 body {
-  font-family: Museo Sans Cyrl-300;
+  font-family: Museo Sans Cyrl-100;
 }
 
 img {
@@ -43,9 +43,14 @@ img {
   }
 }
 
+@media (max-width: 567px) {
+  .container {
+    width: 275px;
+  }
+}
+
 .button {
   padding: 18px 30px;
-  font-family: Museo Sans Cyrl-700;
   border-radius: 10px;
   background-color: #ffd200;
   border: none;
@@ -53,12 +58,14 @@ img {
 
 .navbar {
   padding: 8px 0;
+  height: 88px;
 }
 
 .navbar-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 74px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -95,10 +102,15 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-bottom: -2px;
+  font-size: 13px;
+  font-weight: 400;
 }
 
 .navbar__button {
-  margin-left: 30px;
+  margin-left: 31px;
+  padding: 19px 30px;
+  font-size: 13px;
 }
 
 @media (max-width: 768px) {
@@ -106,24 +118,32 @@ img {
     font-size: 16px;
   }
   .navbar__adress {
-    font-size: 14px;
+    font-size: 13px;
   }
   .navbar__button {
     padding: 15px 26px;
-    font-size: 12px;
   }
   .navbar__logo {
     width: 90px;
+    margin-top: 1px;
   }
 }
 
 @media (max-width: 567px) {
+  .navbar {
+    height: 76px;
+  }
+  .navbar__block {
+    height: 76;
+  }
   .navbar__contacts {
     display: none;
   }
   .navbar__button {
-    padding: 15px 26px;
+    padding: 15px 26px 14px 26px;
+    font-family: Museo Sans Cyrl-700;
     font-size: 10px;
+    font-weight: 400;
   }
   .navbar__logo {
     width: 90px;
