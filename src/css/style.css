@@ -34,7 +34,7 @@ img {
 }
 
 .section {
-  padding: 90px 0;
+  padding: 83px 0;
 }
 
 .section-title {
@@ -187,7 +187,7 @@ img {
 }
 
 .hero {
-  padding: 35px 0;
+  padding: 30px 0;
   background-color: #f5f5f5;
 }
 
@@ -341,18 +341,19 @@ img {
   font-style: 24px;
   line-height: 35px;
   margin-top: 0;
-  margin-bottom: 24px;
+  margin-bottom: 15px;
 }
 
 .offer__subtitle {
   display: block;
   max-width: 250px;
-  margin-bottom: 30px;
+  margin-bottom: 29px;
 }
 
 .offer__input {
   margin-bottom: 30px;
   width: 240px;
+  height: 65px;
 }
 
 .offer__input:first-child {
@@ -360,14 +361,14 @@ img {
 }
 
 .offer__input:focus {
-  border: 2px solid orange;
+  border: 1px solid orange;
   outline: none;
 }
 
 .offer__button {
   width: 100%;
   min-height: 70px;
-  margin-bottom: 33px;
+  margin-bottom: 25px;
   font-size: 16px;
 }
 
@@ -375,11 +376,15 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-size: 15px;
+  margin-right: 10px;
 }
 
 .offer__manager {
-  max-width: 224px;
+  max-width: 230px;
   margin-bottom: 18px;
   line-height: 24px;
 }
