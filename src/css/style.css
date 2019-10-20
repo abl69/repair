@@ -195,6 +195,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 15px;
 }
 
 .hero-text {
@@ -315,6 +316,7 @@ img {
   background: url("../img/offer/2.jpg") no-repeat;
   background-size: contain;
   background-position: center right;
+  max-height: 595px;
   position: relative;
 }
 
@@ -338,6 +340,7 @@ img {
   max-width: 360px;
   font-style: 24px;
   line-height: 35px;
+  margin-top: 0;
   margin-bottom: 24px;
 }
 
