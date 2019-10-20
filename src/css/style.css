@@ -14,6 +14,11 @@
   font-style: normal;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   font-family: Museo Sans Light, sans-serif;
   font-weight: 300;
@@ -28,6 +33,22 @@ img {
   margin: auto;
 }
 
+.section {
+  padding: 90px 0;
+}
+
+.section-title {
+  color: #333333;
+  font-family: Museo Sans Bold, sans-serif;
+  font-weight: 700;
+}
+
+.section-subtitle {
+  color: #333333;
+  font-size: 16px;
+  font-weight: 400;
+}
+
 .button {
   padding: 18px 30px;
   border-radius: 7px;
@@ -35,6 +56,20 @@ img {
   border: none;
   font-family: Museo Sans Bold, sans-serif;
   font-weight: 700;
+}
+
+.button:hover {
+  background-color: #ffdb33;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+  cursor: pointer;
+}
+
+.input {
+  border: 1px solid #dddddd;
+  padding: 20px 26px;
+  font-size: 15px;
+  border-radius: 10px;
 }
 
 @media (max-width: 1200px) {
@@ -122,6 +157,7 @@ img {
   }
   .navbar__button {
     padding: 15px 26px;
+    font-size: 13px;
   }
   .navbar__logo {
     width: 90px;
@@ -198,6 +234,10 @@ img {
   margin-bottom: 24px;
 }
 
+.hero-list__item:last-child {
+  margin-bottom: 0;
+}
+
 .hero-list__image {
   width: 40px;
   height: 40px;
@@ -268,6 +308,110 @@ img {
   }
   .hero-image {
     width: 100%;
+  }
+}
+
+.offer {
+  background: url("../img/offer/2.jpg") no-repeat;
+  background-size: contain;
+  background-position: center right;
+  position: relative;
+}
+
+.offer:before {
+  content: '';
+  width: 50%;
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.offer-block {
+  width: 50%;
+  padding-right: 90px;
+  position: relative;
+}
+
+.offer__title {
+  max-width: 360px;
+  font-style: 24px;
+  line-height: 35px;
+  margin-bottom: 24px;
+}
+
+.offer__subtitle {
+  display: block;
+  max-width: 250px;
+  margin-bottom: 30px;
+}
+
+.offer__input {
+  margin-bottom: 30px;
+  width: 240px;
+}
+
+.offer__input:first-child {
+  margin-right: 10px;
+}
+
+.offer__button {
+  width: 100%;
+  min-height: 70px;
+  margin-bottom: 33px;
+  font-size: 16px;
+}
+
+.offer-call-back {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 15px;
+}
+
+.offer__manager {
+  max-width: 224px;
+  margin-bottom: 18px;
+  line-height: 24px;
+}
+
+.offer__phone {
+  display: block;
+  margin-top: 10px;
+  color: #333333;
+  font-family: Museo Sans Bold, sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+@media (max-width: 1200px) {
+  .offer {
+    background-size: cover;
+  }
+  .offer__input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .offer__button {
+    font-size: 13px;
+  }
+  .offer-call-back {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .offer {
+    background: #fff;
+  }
+  .offer-block {
+    width: 100%;
+    padding-right: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
