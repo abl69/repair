@@ -445,6 +445,9 @@ img {
     font-size: 14px;
     line-height: 18px;
   }
+  .offer-call-back {
+    padding: 0 5px;
+  }
   .offer__manager {
     margin-bottom: 10px;
     font-size: 15px;
