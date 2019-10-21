@@ -88,6 +88,9 @@ img {
   .container {
     width: 87%;
   }
+  .section {
+    padding: 72px 5px;
+  }
 }
 
 .navbar {
@@ -338,7 +341,7 @@ img {
 
 .offer__title {
   max-width: 360px;
-  font-style: 24px;
+  font-size: 24px;
   line-height: 35px;
   margin-top: 0;
   margin-bottom: 15px;
@@ -422,9 +425,29 @@ img {
   .offer {
     background: #fff;
   }
+  .offer__title {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .offer__subtitle {
+    font-size: 14px;
+  }
   .offer-block {
     width: 100%;
     padding-right: 0;
+  }
+  .offer__input {
+    margin-bottom: 9px;
+  }
+  .offer__button {
+    margin-bottom: 18px;
+    padding: 10px 35px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .offer__manager {
+    margin-bottom: 10px;
+    font-size: 15px;
   }
 }
 /*# sourceMappingURL=style.css.map */
