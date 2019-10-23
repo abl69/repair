@@ -94,7 +94,15 @@
 	<div class="modal" id='modal'>
 		<div class="modal-dialog">
 			<button class="modal-dialog__close" id='close'>&times;</button>
-			<h4 class="modal-dialog__title">Всплывающее окно</h4>
+			<h4 class="modal-dialog__title">Узнайте точную стоимость ремонта по телефону!</h4>
+			<span class="modal-dialog__subtitle">Заполните поля ниже - мы свяжемся с Вами</span>
+			<form action="#" class="form modal__form">
+				<input type="text" class="input modal__input"placeholder="Ваше имя">
+				<input type="tel" class="input modal__input"required placeholder="Ваш телефон"pattern="+7([0-9]{3})[0-9]{3}-[0-9]{4}">
+				<button class="button modal__button">Узнать стоимость</button>
+			</form>
+			<span class="modal-dialog__call-back">Или Вы можете перезвонить нам сами по телефону: </span>
+			<a class="modal-dialog__phone" href="tel:+7 (8182) 42-51-31">+7 (8182) 42-51-31</a>
 		</div>
 		<!-- /.modal-dialog -->
 	</div>
