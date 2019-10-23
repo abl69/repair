@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Museo Sans Light';
   src: url("../font/MuseoSansCyrl/MuseoSansCyrl-300.eot");
-  src: url("../font/MuseoSansCyrl/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("../f1ont/MuseoSansCyrl/MuseoSansCyrl-300.woff") format("woff"), url("../font/MuseoSansCyrl/MuseoSansCyrl-300.ttf") format("truetype");
+  src: url("../font/MuseoSansCyrl/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("../font/MuseoSansCyrl/MuseoSansCyrl-300.woff") format("woff"), url("../font/MuseoSansCyrl/MuseoSansCyrl-300.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -453,5 +453,40 @@ img {
     margin-bottom: 10px;
     font-size: 15px;
   }
+}
+
+.modal {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.modal-active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal-dialog {
+  position: relative;
+  margin: auto;
+  max-width: 450px;
+  width: 95%;
+  min-width: 200px;
+  background-color: #fff;
+  padding: 40px;
+}
+
+.modal-dialog__close {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 /*# sourceMappingURL=style.css.map */
