@@ -584,9 +584,9 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: auto;
   margin-top: 68px;
   max-width: 120px;
-  margin: auto;
 }
 
 .slider__img {
