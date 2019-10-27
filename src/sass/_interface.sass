@@ -12,6 +12,7 @@ img
 	&-title
 		color: $text-color
 		+bold
+		text-align: center
 	&-subtitle
 		color: $text-color
 		font-size: 16px
@@ -21,6 +22,7 @@ img
 	border-radius: 7px
 	background-color: $main-color
 	border: none
+	outline: none
 	+bold
 	&:hover
 		background-color: lighten($main-color,10%)
@@ -34,6 +36,16 @@ img
 	&:focus
 			border: 1px solid $border-input-focus
 			outline: none
+.row-up
+	position: fixed
+	left: 0
+	bottom: 0
+	width: 40px
+.arrows
+	&__left, &__right
+		&:hover
+			cursor: pointer
+
 @media ( max-width: 1200px )
 	.container
 		width: 95%
