@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/slick.css">
 	<title>Ремонт квартир</title>
@@ -36,19 +37,19 @@
 						<h1 class="hero-text__title">Внутренняя отделка помещений "под ключ"</h1>
 						<span class="hero-text__subtitle">с гарантией качества, прописанной в договоре</span>
 						<ul class="hero-list">
-							<li class="hero-list__item">
+							<li class="hero-list__item animated bounceIn">
 								<div class="hero-list__image">
 									<img src="./img/hero/1-time.svg" alt="clock">
 								</div>
 								<span class="hero-list__text">Точно соблюдаем сроки</span>
 							</li>
-							<li class="hero-list__item">
+							<li class="hero-list__item animated bounceIn delay-2s">
 								<div class="hero-list__image">
 									<img src="./img/hero/1-calc.svg" alt="calculator">
 								</div>
 								<span class="hero-list__text">Рассчитаем смету на работы и материалы в день обращения</span>
 							</li>
-							<li class="hero-list__item">
+							<li class="hero-list__item animated bounceIn delay-4s">
 								<div class="hero-list__image">
 									<img src="./img/hero/1-variant.svg" alt="plan">
 								</div>
@@ -116,6 +117,92 @@
 			<!-- /.container -->
 		</section>
 		<!-- /.section portfolio -->
+
+		<section class="section price">
+			<div class="container">
+				<h2 class="section-title price__title">У нас очень гибкая система скидок на комплексные работы!</h2>
+				<!-- /.h2 section-title price__title -->
+				<span class="section-subtitle price__subtitle">Прайс на наши услуги</span>
+				<!-- /.section-subtitle price-subtitle -->
+				<div class="cards">
+					<div class="card price__card">
+						<div class="card__image"><img class="card-image" src="img/price/price-1.jpg" alt=""></div>
+						<!-- /.card__image -->
+						<div class="card__text">
+							<h4 class="card__title">Ремонт ванных комнат и с/у</h4>
+							<!-- /.card__title -->
+							<a href="#" class="card__link">Узнать цены</a>
+							<!-- /.card__link -->
+						</div>
+						<!-- /.card__text -->
+					</div>
+					<!-- /.card -->
+					<div class="card price__card">
+						<div class="card__image"><img class="card-image" src="img/price/price-2.jpg" alt=""></div>
+						<!-- /.card__image -->
+						<div class="card__text">
+							<h4 class="card__title">Ремонт комнат и квартир</h4>
+							<!-- /.card__title -->
+							<a href="#" class="card__link">Узнать цены</a>
+							<!-- /.card__link -->
+						</div>
+						<!-- /.card__text -->
+					</div>
+					<!-- /.card -->
+					<div class="card price__card">
+						<div class="card__image"><img class="card-image" src="img/price/price-3.jpg" alt=""></div>
+						<!-- /.card__image -->
+						<div class="card__text">
+							<h4 class="card__title">Отделка офисных помещений</h4>
+							<!-- /.card__title -->
+							<a href="#" class="card__link">Узнать цены</a>
+							<!-- /.card__link -->
+						</div>
+						<!-- /.card__text -->
+					</div>
+					<!-- /.card -->
+					<div class="card price__card">
+						<div class="card__image"><img class="card-image" src="img/price/price-4.jpg" alt=""></div>
+						<!-- /.card__image -->
+						<div class="card__text">
+							<h4 class="card__title">Ремонт в новостройках</h4>
+							<!-- /.card__title -->
+							<a href="#" class="card__link">Узнать цены</a>
+							<!-- /.card__link -->
+						</div>
+						<!-- /.card__text -->
+					</div>
+					<!-- /.card -->
+					<div class="card price__card">
+						<div class="card__image"><img class="card-image" src="img/price/price-5.jpg" alt=""></div>
+						<!-- /.card__image -->
+						<div class="card__text">
+							<h4 class="card__title">Ремонт кухонь</h4>
+							<!-- /.card__title -->
+							<a href="#" class="card__link">Узнать цены</a>
+							<!-- /.card__link -->
+						</div>
+						<!-- /.card__text -->
+					</div>
+					<!-- /.card -->
+					<div class="card price__card">
+						<div class="card__image"><img class="card-image" src="img/price/price-6.jpg" alt=""></div>
+						<!-- /.card__image -->
+						<div class="card__text">
+							<h4 class="card__title">Ремонт дач и коттеджей</h4>
+							<!-- /.card__title -->
+							<a href="#" class="card__link">Узнать цены</a>
+							<!-- /.card__link -->
+						</div>
+						<!-- /.card__text -->
+					</div>
+					<!-- /.card -->
+				</div>
+				<!-- /.cards -->
+			</div>
+			<!-- /.container -->
+		</section>
+		<!-- /.section price -->
 	</main>
 
 	<div class="row-up">
@@ -146,6 +233,10 @@
   crossorigin="anonymous"></script>
 	<script src="js/modal.js">	</script>
 	<script src="js/slick.js">	</script>
+	<script src="js/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
 	<script>
 		$(document).ready(function () {
 			$('.slider').slick({
