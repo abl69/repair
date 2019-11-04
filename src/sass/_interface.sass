@@ -35,8 +35,15 @@ img
 	font-size: 15px
 	border-radius: 10px
 	&:focus
-			border: 1px solid $border-input-focus
-			outline: none
+		border: 1px solid $border-input-focus
+		outline: none
+.invalid
+	border: none
+	font-size: 14px
+	color: red
+input.invalid
+	margin-bottom: 0px
+	border: 1px solid red
 .row-up
 	position: fixed
 	left: 0
@@ -46,7 +53,6 @@ img
 	&__left, &__right
 		&:hover
 			cursor: pointer
-
 @media ( max-width: 1200px )
 	.container
 		width: 95%
